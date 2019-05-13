@@ -40,7 +40,7 @@ class App extends Component {
           <button type="submit">Add</button>
         </form>
 
-        <ul onSubmit={this.handleSubmit}>
+        <ul>
           { this.renderTodoItems() }
         </ul>
       </div>
