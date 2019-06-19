@@ -11,25 +11,14 @@ class App extends Component {
         { done: false, text: 'Create TodoForm, TodoList and TodoItem components' },
         { done: false, text: 'Mark done a todo item' },
         { done: false, text: 'Remove todo item' },
+        { done: false, text: 'Call fake API : https://api.myjson.com/bins/108ou5' },
       ],
     }
   }
 
-  renderTodoItems() {
+  render() {
     const { todos } = this.state;
 
-    return todos.map((item, index) => {
-      return (
-        <li key={index}>
-          <span className={item.done ? 'done' : 'undone'}>&#9675;</span>
-          {item.text}
-          <span className="remove">X</span>
-        </li>
-      )
-    });
-  }
-
-  render() {
     return (
       <div className="App">
         <form>
@@ -41,7 +30,15 @@ class App extends Component {
         </form>
 
         <ul>
-          { this.renderTodoItems() }
+          {
+            todos.map((item, index) => (
+                <li key={index}>
+                  <span className={item.done ? 'done' : 'undone'}>&#9675;</span>
+                  {item.text}
+                  <span className="remove">X</span>
+                </li>
+            ))
+          }
         </ul>
       </div>
     );
