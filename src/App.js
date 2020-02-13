@@ -12,6 +12,7 @@ class App extends Component {
         { done: false, text: 'Mark done a todo item' },
         { done: false, text: 'Remove todo item' },
         { done: false, text: 'Call fake API : https://api.myjson.com/bins/108ou5' },
+        { done: false, text: 'use React Hooks' },
       ],
     }
   }
