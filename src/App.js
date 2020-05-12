@@ -7,12 +7,10 @@ class App extends Component {
     super(props);
     this.state = {
       todos: [
-        { id: 0, done: false, text: 'use React Hooks (optional)' },
         { id: 1, done: false, text: 'Add new todo with form' },
-        { id: 2, done: false, text: 'Create TodoForm, TodoItem components' },
-        { id: 3, done: false, text: 'Mark done a todo item' },
-        { id: 4, done: false, text: 'Remove todo item' },
-        { id: 5, done: false, text: 'Call fake API with axios : https://api.myjson.com/bins/108ou5' },
+        { id: 2, done: false, text: 'Create Components : TodoForm, TodoList, TodoItem ...' },
+        { id: 3, done: false, text: 'Mark done an item' },
+        { id: 4, done: false, text: 'Remove an item' },
       ],
     }
   }
